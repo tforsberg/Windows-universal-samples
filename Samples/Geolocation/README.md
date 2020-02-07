@@ -1,3 +1,21 @@
+---
+page_type: sample
+languages:
+- csharp
+- cpp
+- cppcx
+products:
+- windows
+- windows-uwp
+urlFragment: Geolocation
+extendedZipContent:
+- path: SharedContent
+  target: SharedContent
+- path: LICENSE
+  target: LICENSE
+description: "Shows how to get the geographic location of the user's device and track its movements in various ways."
+---
+
 <!---
   category: MapsAndLocation 
   samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=533278
@@ -16,7 +34,9 @@ After obtaining access to the user's location, an app can
 * Receiving events when the device has spent significant time in a location (a "visit").
 
 > **Note:** This sample is part of a large collection of UWP feature samples. 
-> If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> You can download this sample as a standalone ZIP file
+> [from docs.microsoft.com](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/geolocation/),
+> or you can download the entire collection as a single
 > [ZIP file](https://github.com/Microsoft/Windows-universal-samples/archive/master.zip), but be 
 > sure to unzip everything to access shared dependencies. For more info on working with the ZIP file, 
 > the samples collection, and GitHub, see [Get the UWP samples from GitHub](https://aka.ms/ovu2uq). 
@@ -47,28 +67,30 @@ This sample requires that location capability be set in the *Package.appxmanifes
 
 ## Related topics
 
-[Get current location](https://msdn.microsoft.com/library/windows/apps/mt219698)  
-[Windows.Devices.Geolocation](http://msdn.microsoft.com/library/windows/apps/br225603)  
-[Windows.Devices.Geolocation.Geofencing](https://msdn.microsoft.com/library/windows/apps/dn263744)    
-[Guidelines for location-aware apps](https://msdn.microsoft.com/library/windows/apps/hh465148)  
+### Conceptual
 
-## Related samples
+* [Get current location](https://msdn.microsoft.com/library/windows/apps/mt219698)
+* [Guidelines for location-aware apps](https://msdn.microsoft.com/library/windows/apps/hh465148)
 
-[Traffic App sample](https://github.com/microsoft/windows-appsample-trafficapp/)  
-[Lunch Scheduler app sample](https://github.com/Microsoft/Windows-appsample-lunch-scheduler)  
+### Reference
+
+* [Windows.Devices.Geolocation](http://msdn.microsoft.com/library/windows/apps/br225603)
+* [Windows.Devices.Geolocation.Geofencing](https://msdn.microsoft.com/library/windows/apps/dn263744)
+
+### Related samples
+
+* [Traffic App sample](https://github.com/microsoft/windows-appsample-trafficapp/)
+* [Lunch Scheduler app sample](https://github.com/Microsoft/Windows-appsample-lunch-scheduler)
+* [Geolocation sample](/archived/Geolocation/) for JavaScript (archived)
 
 ## System requirements
 
-**Client:** Windows 10
-
-**Server:** Windows Server 2016 Technical Preview
-
-**Phone:** Windows 10
+* Windows 10
 
 ## Build the sample
 
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
-2. Start Microsoft Visual Studio 2017 and select **File** \> **Open** \> **Project/Solution**.
+2. Start Microsoft Visual Studio and select **File** \> **Open** \> **Project/Solution**.
 3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio Solution (.sln) file.
 4. Press Ctrl+Shift+B, or select **Build** \> **Build Solution**.
 

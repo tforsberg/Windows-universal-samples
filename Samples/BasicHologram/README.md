@@ -1,4 +1,23 @@
-﻿<!---
+---
+page_type: sample
+languages:
+- csharp
+- cpp
+- cppcx
+- cppwinrt
+products:
+- windows
+- windows-uwp
+urlFragment: BasicHologram
+extendedZipContent:
+- path: SharedContent
+  target: SharedContent
+- path: LICENSE
+  target: LICENSE
+description: "Shows how to render a simple hologram that is a spinning cube."
+---
+
+<!---
   category: Holographic
   samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=864208
 --->
@@ -8,7 +27,9 @@
 Shows how to render a simple hologram that is a spinning cube.
 
 > **Note:** This sample is part of a large collection of UWP feature samples. 
-> If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> You can download this sample as a standalone ZIP file
+> [from docs.microsoft.com](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/basichologram/),
+> or you can download the entire collection as a single
 > [ZIP file](https://github.com/Microsoft/Windows-universal-samples/archive/master.zip), but be 
 > sure to unzip everything to access shared dependencies. For more info on working with the ZIP file, 
 > the samples collection, and GitHub, see [Get the UWP samples from GitHub](https://aka.ms/ovu2uq). 
@@ -32,7 +53,7 @@ submit a depth buffer for per-pixel image stabilization.
 
 ### Additional remarks
 
-**Note** The Windows universal samples for Windows Mixed Reality require Visual Studio 2017 Update 2
+**Note** The Windows universal samples for Windows Mixed Reality require Visual Studio
 to build, and a Windows Holographic or Windows Mixed Reality device to execute. Windows Holographic 
 devices include the Microsoft HoloLens and the Microsoft HoloLens Emulator. Windows Mixed Reality
 headsets are available for use with Windows 10 PCs.
@@ -62,10 +83,13 @@ The following Windows Universal API namespaces are used in this code sample:
 
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with 
    the sample you want to build. 
-2. Start Microsoft Visual Studio 2017 and select **File** \> **Open** \> **Project/Solution**.
+2. If you intend to build the C++/WinRT sample,
+   install the [C++/WinRT Visual Studio Extension](https://aka.ms/cppwinrt/vsix)
+   if you haven't already.
+2. Start Microsoft Visual Studio and select **File** \> **Open** \> **Project/Solution**.
 3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the 
-   subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or 
-   JavaScript). Double-click the Visual Studio Solution (.sln) file.
+   subfolder for this specific sample, then the subfolder for your preferred language.
+   Double-click the Visual Studio Solution (.sln) file.
 4. Press Ctrl+Shift+B, or select **Build** \> **Build Solution**.
 
 ## Run the sample

@@ -1,4 +1,22 @@
-﻿<!---
+---
+page_type: sample
+languages:
+- csharp
+- cpp
+- cppcx
+products:
+- windows
+- windows-uwp
+urlFragment: Advertising
+extendedZipContent:
+- path: SharedContent
+  target: SharedContent
+- path: LICENSE
+  target: LICENSE
+description: "Shows how to use the Microsoft Advertising SDK (Microsoft.Advertising) to show display ads and interstitial ads."
+---
+
+<!---
   category: NetworkingAndWebServices
   samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=722924
 --->
@@ -8,7 +26,9 @@
 Shows how to use the Microsoft Advertising SDK (Microsoft.Advertising) to show display ads and interstitial ads.
 
 > **Note:** This sample is part of a large collection of UWP feature samples. 
-> If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> You can download this sample as a standalone ZIP file
+> [from docs.microsoft.com](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/advertising/),
+> or you can download the entire collection as a single
 > [ZIP file](https://github.com/Microsoft/Windows-universal-samples/archive/master.zip), but be 
 > sure to unzip everything to access shared dependencies. For more info on working with the ZIP file, 
 > the samples collection, and GitHub, see [Get the UWP samples from GitHub](https://aka.ms/ovu2uq). 
@@ -22,8 +42,9 @@ Specifically, this sample shows how to:
 
 ## Prerequisites
 
-This sample requires the [Microsoft Advertising SDK Libraries for XAML or JavaScript](http://go.microsoft.com/fwlink/?LinkID=619694).
-[Download it here](http://go.microsoft.com/fwlink/p/?LinkId=518026).
+This sample requires the [Microsoft Advertising SDK Libraries for XAML or JavaScript](http://go.microsoft.com/fwlink/?LinkID=619694),
+which is obtained via NuGet package,
+or you can [download it here](http://go.microsoft.com/fwlink/p/?LinkId=518026).
 It also requires the [internet client capability](https://msdn.microsoft.com/library/windows/apps/mt270968#general-use_capabilities) to be added to the manifest.
 
 When you incorporate this sample into your own app,
@@ -35,7 +56,8 @@ for more details.
 
 ### Samples
 
-[Microsoft Store in-app purchase](/Samples/Store)  
+* [Microsoft Store in-app purchase](/Samples/Store)
+* [Advertising sample](/archived/Advertising/) for JavaScript (archived)
 
 ## Reference
 
@@ -49,14 +71,12 @@ for more details.
 
 ## System requirements
 
-**Client:** Windows 10
-
-**Phone:** Windows 10
+* Windows 10
 
 ## Build the sample
 
 1. If you download the samples ZIP, be sure to unzip the entire archive, not just the folder with the sample you want to build. 
-2. Start Microsoft Visual Studio 2017 and select **File** \> **Open** \> **Project/Solution**.
+2. Start Microsoft Visual Studio and select **File** \> **Open** \> **Project/Solution**.
 3. Starting in the folder where you unzipped the samples, go to the Samples subfolder, then the subfolder for this specific sample, then the subfolder for your preferred language (C++, C#, or JavaScript). Double-click the Visual Studio Solution (.sln) file.
 4. Press Ctrl+Shift+B, or select **Build** \> **Build Solution**.
 
